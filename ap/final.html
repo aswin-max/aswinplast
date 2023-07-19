@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>vCard Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="vcard">
+    <div class="header">
+      <h1>A WIN PLAST</h1>
+    </div>
+    <div class="content">
+      <h2>Contact Information</h2>
+      <ul>
+        <li>
+          <span class="category">Name:</span>
+          <span class="value">RAJEEV KUMAR</span>
+        </li>
+        <li>
+          <span class="category">Email:</span>
+          <span class="value"><a href="mailto:rajeevawinplast@gmail.com">rajeevawinplast@gmail.com</a></span>
+        </li>
+        <li>
+          <span class="category">Phone:</span>
+          <span class="value">9847416777</span>
+        </li>
+        
+      </ul>
+      <button class="save-contact" onclick="saveContact()">Save Contact</button>
+    </div>
+  </div>
+
+  <script>
+    function saveContact() {
+      const name = "RAJEEV KUMAR";
+      const phoneNumber = "9847416777";
+      const url = "tel:" + encodeURIComponent(phoneNumber);
+
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
