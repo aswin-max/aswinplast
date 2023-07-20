@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>vCard Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .vcard {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("abc.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .vcard-content {
+      max-width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .header h1 {
+      margin: 0;
+    }
+    .content ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .content li {
+      margin-bottom: 10px;
+    }
+    .send-email,
+    .save-contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      height: fit-content;
+      text-align: center;
+      margin-left: 10px;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .send-email {
+      
+      margin-bottom:0px;
+    }
+    .icon {
+      margin-left: 8px; /* Update the margin to create space between email and icon */
+      /* Update the icon styles */
+      margin-right: 8px;
+      background-color: transparent; /* Remove the background color */
+      width: 30px; /* Set the width of the custom icon */
+      height: 30px; /* Set the height of the custom icon */
+    }
+    .icon1 {
+      margin-left: 8px; /* Update the margin to create space between email and icon */
+      /* Update the icon styles */
+      margin-right: 8px;
+      margin-bottom: -7px;
+      background-color: transparent; /* Remove the background color */
+      width: 30px; /* Set the width of the custom icon */
+      height: 30px; /* Set the height of the custom icon */
+    }
+    /* Style the anchor tag as a button */
+    .save-contact {
+      display: inline-flex;
+      align-items: right;
+      justify-content: center;
+      padding: 8px;
+      margin-left: 111px;
+      text-decoration: none;
+      color: #fff;
+    }
+    
+
+    /* Align email and icon in the same line */
+    .email-container {
+      display: flex;
+      align-items: center;
+    }
+    .contact-container {
+      display: flex;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="vcard">
+    <div class="vcard-content">
+      <div class="header">
+        <h1>
+            
+            A WIN PLAST
+        </h1>
+      </div>
+      <div class="content">
+        <h2>Contact Information</h2>
+        <ul>
+          <li>
+            <span class="category"><img class="icon1" src="name.png" alt="Name"></span>
+            <span class="value">RAJEEV KUMAR</span>
+          </li>
+          <li>
+              <div class="email-container">
+                <img class="icon" src="email.png" alt="email"> Rajeevawinplast@gmail.com
+                <a href="mailto:Rajeevawinplast@gmail.com" class="send-email">
+                  <img class="icon" src="sndmail.png" alt="Send Email">
+                </a>
+              </div>
+          </li>
+          <li>
+           
+            <div class="email-container">
+                <img class="icon" src="phone.png" alt="Name">9847416777
+            <a href="tel:9847416777" class="save-contact">
+                  <img class="icon" src="savecon.png" alt="Save Contact">
+                </a>
+              </div>
+          </li>
+          
+      </div>
+    </div>
+  </div>
+</body>
+</html>
